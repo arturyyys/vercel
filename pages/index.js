@@ -14,7 +14,7 @@ const DUMMY_MEETUPS = [
     title: "A Second Meetup",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/d/d3/Stadtbild_M%C3%BCnchen.jpg",
-    address: "Some address 5, 12345 Some City",
+    address: "Some address 10, 12345 Some City",
     description: "This is a second meetup!",
   },
 ];
@@ -28,10 +28,11 @@ function HomePage(props) {
 //   const res = context.res;
 
 //   // fetch data from an API
+
 //   return {
 //     props: {
-//       meetups: DUMMY_MEETUPS,
-//     },
+//       meetups: DUMMY_MEETUPS
+//     }
 //   };
 // }
 
@@ -41,7 +42,7 @@ export async function getStaticProps() {
     props: {
       meetups: DUMMY_MEETUPS,
     },
-    revalidate: 10,
+    revalidate: 1,
   };
 }
 

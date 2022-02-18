@@ -7,10 +7,8 @@ async function handler(req, res) {
   if (req.method === "POST") {
     const data = req.body;
 
-    const { title, image, address, description } = data;
-
     const client = await MongoClient.connect(
-      "mongodb+srv://Arturas:88888888@cluster0.j8ggi.mongodb.net/meetups?retryWrites=true&w=majority"
+      "mongodb+srv://Arturas:88888888@cluster0.j8ggi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
     );
     const db = client.db();
 

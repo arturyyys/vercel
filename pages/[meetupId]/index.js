@@ -1,6 +1,6 @@
 import { MongoClient, ObjectId } from "mongodb";
-import Head from "next/head";
 import { Fragment } from "react";
+import Head from "next/head";
 
 import MeetupDetail from "../../components/meetups/MeetupDetail";
 
@@ -73,5 +73,3 @@ export async function getStaticProps(context) {
 }
 
 export default MeetupDetails;
-
-// ready to deploying next.js
